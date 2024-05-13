@@ -1,21 +1,22 @@
-import { useEffect } from "react";
 import Game from "./snake-game/game";
 
-const Board = () => {
-	const canvasId = "gameCanvas";
+interface Props {
+	canvasId: string;
+}
 
+const Board = ({ canvasId }: Props) => {
 	const windowWidth = window.innerWidth;
 	const windowHeight = window.innerHeight;
-    
-    // const game = new Game(
-    //     windowWidth * 0.8,
-    //     windowHeight * 0.8,
-    //     windowHeight * 0.05,
-    //     canvasId,
-    //     0,
-    //     0
-    // );
-	
+
+	// const game = new Game(
+	// 	windowWidth * 0.8,
+	// 	windowHeight * 0.8,
+	// 	windowHeight * 0.05,
+	// 	canvasId,
+	// 	0,
+	// 	0
+	// );
+
 	// window.addEventListener("keydown", (event) => {
 
 	//     event.key
@@ -23,7 +24,7 @@ const Board = () => {
 	//     console.log(events);
 	// });
 
-	return <canvas className="center" id={canvasId}></canvas>;
+	return <></>;
 };
 
 export default Board;
